@@ -1,0 +1,12 @@
+{
+  "name": "dsh-senses",
+  "version": "0.1.0",
+  "type": "module",
+  "private": false,
+  "description": "Real-time companion senses for DeepSeek Harness: know what the user is watching and where they are, and receive only the subtitles they have already seen (spoiler-safe). Windows.",
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "media", "subtitle", "companion", "windows"],
+  "license": "MIT",
+  "files": ["plugin/", "adapters/", "bundle/", "test/", "bili-browser.ps1", "README.md", "LICENSE"],
+  "dsh": { "bundle": { "patch": "./bundle/cordis.patch.yml" } },
+  "engines": { "node": ">=22" }
+}

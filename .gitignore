@@ -1,0 +1,7 @@
+node_modules/
+playground/
+work/videos/
+work/subtitles/
+*.log
+*.png
+!docs/*.png

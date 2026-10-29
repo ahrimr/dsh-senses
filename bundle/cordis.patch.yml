@@ -1,0 +1,9 @@
+# senses —— 一条 Host 行。
+#
+# 为什么是 Host 级：Host 级注册的工具进 `tools` 的全局层，**每个 agent preset 的
+# Agent 都继承得到**（除非显式 tools.restrict 收窄）。所以不用给每个模式拷一份预设。
+#
+# **不写 config.root**：插件会取自己所在的包根目录。写死绝对路径装到别人机器上就废了。
+- insert:
+    - id: senses
+      name: dsh-senses
